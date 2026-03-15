@@ -94,7 +94,6 @@ while n>0:
 
 print(count)
 #check for a prime number
-<<<<<<< HEAD
 #prime numbers: divisble by 1 and itself
 
 
@@ -135,6 +134,4 @@ print(count)
 #     print(f"{S} is a Armstrong Number")
 # else:
 #     print(f"{S} is not an Armstrong Number")
-=======
-#prime numbers: divisble by 1 and itself
->>>>>>> 186a2484c75bee3bca6913f1c115003aebc73ca4
+
