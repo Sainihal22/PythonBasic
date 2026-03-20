@@ -87,4 +87,94 @@
 # word = "k"
 # print(sentence.index(word))
 
-# 9. count()
+# 9. len()
+# word = "banana"
+# print(len(word))
+
+# 10. count()
+# word = "apple"
+# print(word.count("o"))
+
+# 11. startswith() and endswith()
+# name = "Will Johnson"
+# print(name.startswith("Will"))
+# print(name.endswith("son"))
+# print(name.endswith(("ing", "ed")))
+
+# 12. isdigit(), isalpha(), isalnum()
+# word = "1234"
+# print(word.isdigit())
+# word = "abc"
+# print(word.isalpha())
+# word = "abc1234"
+# print(word.isalnum())
+# word = "12.45"
+# print(word.isdigit())
+
+# 13. in, not in
+# sentence = "I love Python"
+# word = "Java"
+# # print(word in sentence)
+# print(word not in sentence)
+
+# 14. f-string , .format(), % style
+# name = "Nihal"
+# age = 26
+# print(f"My name is {name} and I am {age} old")
+# print("My name is {} and I am {} old".format(name, age))
+# print("My name is %s and age is %d" % (name, age))
+
+# 'd' for integers
+# 'f' for floating-point numbers
+# 'b' for binary numbers
+# 'o' for octal numbers
+# 'x' for octal hexadecimal numbers
+# 's' for string
+# 'e' for floating-point in an exponent format
+
+# Loops
+# string = "Python"
+# length_of_string = len(string)
+# count = 0
+# for ch in string:
+#     # print(ch)
+#     count += 1
+
+# print(count)
+
+# for i in range(length_of_string):
+#     # print(i)
+#     print(string[i])
+
+# string=input("Enter a string:")
+
+# variable=string.split()
+
+# print(variable[2])
+# print(len(variable))
+
+
+# list_variable=["I","had","my","lunch"]
+# output = " ".join(list_variable)
+# print(output)
+
+# sentence = "to be or not to be not"
+
+# # print(sentence.count("be"))
+# print(sentence.find("not"))
+
+# Q6. Write the code.
+# Take sentence from user.
+#  Print:
+# - Total characters
+# - Total words
+# - Uppercase
+
+# sentence=input("enter a string:")
+# print(len(sentence))
+# x=sentence.split()
+# print(x)
+# print(len(x))
+
+# y=sentence.upper()
+# print(y)
