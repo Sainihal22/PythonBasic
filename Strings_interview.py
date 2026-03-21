@@ -73,7 +73,60 @@
 
 # 9.
 
-name = "Alice"
-name[0] = "B"
-print(name)
+# name = "Alice"
+# name[0] = "B"
+# print(name)
 
+# 10.
+
+# sentence = "I love Python and Python is very easy"
+# result = sentence.find("Java")
+
+# if result == -1:
+#     print("Valid")
+# else:
+#     print("Invalid")
+
+# 11.
+
+# word = "playing"
+
+# if word.endswith("ing" or "ed"):
+#     print("Valid")
+
+# if word.endswith(("ing", "ed")):
+#     print("Valid")
+
+# 12. 
+
+# age = "25"
+# next_year = age + 1
+# print(next_year)
+
+# 13. 
+
+# age = "25"
+# next_year = int(age) + 1
+# print(next_year)
+
+# 14.
+
+# for i in range(len("Hello") + 1):
+#     print("Hello"[i])
+
+# 15. 
+
+# text = "Hello"
+# for i in range(len(text)):
+#     print(text[i])
+
+# 16.
+
+# words = ["apple", "mango banana"]
+# result = " ".join(words)
+# print(result)
+# print(result.split() == words)
+
+# 17.
+
+# Take sentence from user as an input and count vowels, consonants, and spaces
