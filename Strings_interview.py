@@ -130,3 +130,81 @@
 # 17.
 
 # Take sentence from user as an input and count vowels, consonants, and spaces
+
+# sentence = input("Enter a sentence:")
+# Vowels = "aeiou"
+# v_count = 0
+# s_count = 0
+# c_count = 0
+# n_count = 0
+
+# for ch in sentence:
+#     if ch in Vowels or ch in Vowels.upper():
+#         v_count+=1
+#     elif ch == " ":
+#         s_count+=1
+#     elif ch.isalpha():
+#         c_count+=1
+#     # else:
+#     elif ch.isdigit():
+#         n_count+=1
+
+# print(f'The count of vowels is {v_count}')
+# print(f"The count of consonants is {c_count}")
+# print(f"The count of spaces is {s_count}")
+# print(f"The count of numbers is {n_count}")
+
+# 18. 
+
+# Print each word and its length.
+# Input  :  I love Python
+# I      : 1
+# love   : 4
+# Python : 6
+
+# sentence = input("ENter the sentence:")
+
+# words = sentence.split()
+
+# for ch in range(len(words)):
+#     print(f"{words[ch]} : {len(words[ch])}")
+
+# for i in words:
+#     print(f"{i} : {len(i)}")
+
+# 19. 
+
+# Print only words longer than 3 characters.
+# Input  :  I love Python and Java
+
+# love
+# Python
+# Java
+
+# sentence = input("enter the word:")
+# words = sentence.split()
+
+# for ch in words:
+#     if len(ch) > 3:
+#         print(ch)
+
+# 20. 
+
+# Replace all vowels with `*`.
+# ```
+# Input  :  Hello World
+# Output :  H*ll* W*rld
+
+# s = input("enter the sentence:")
+
+# vowels = "aeiou"
+# result = ""
+# for ch in sentence:
+#     if ch in vowels or ch in vowels.upper():
+#         result = result + '*'
+#     else:
+#         result = result +ch
+        
+# for v in vowels:
+#     s= s.replace(v, "x")
+# print(s)
