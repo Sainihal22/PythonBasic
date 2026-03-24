@@ -208,3 +208,53 @@
 # for v in vowels:
 #     s= s.replace(v, "x")
 # print(s)
+
+# Print characters at even and odd index separately.
+# ```
+# Input  :  Python
+
+# Even : Pto
+# Odd  : yhn
+
+# even = ""
+# odd = ""
+# user_input=input("Enter the sentence:")
+# for i in range(len(user_input)):
+#     if i%2 == 0:
+#         even = even +user_input[i]
+#     else:
+#         odd = odd + user_input[i]
+        
+# print(f"Even:{even}")
+# print(f"Odd:{odd}")
+
+# Reverse a string without `[::-1]`.
+
+# Input  :  Hellow
+# Output :  wolleH
+
+# user_output = ""
+# user_input = input("Enter a sentence:")
+# for i in user_input:
+#     user_output = i + user_output
+# print(f"output : {user_output}")
+
+# sentence = "to be or not to be"
+# words = sentence.split()
+# print(words)
+# done = []
+# for i in words:
+#     if i not in done:
+#         count = words.count(i)
+#         print(f"Count of {i} is : {count}")
+#         done.append(i)
+
+# print(done)
+
+
+# sentence = "to be or not to be"
+# words = sentence.split()
+# count = {}
+
+# for i in words:
+#     if i in count:
