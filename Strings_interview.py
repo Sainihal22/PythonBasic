@@ -252,9 +252,179 @@
 # print(done)
 
 
-# sentence = "to be or not to be"
-# words = sentence.split()
-# count = {}
+#to be or not to be
+# user_input = input("enter a sentence:")
 
-# for i in words:
-#     if i in count:
+# sentence = user_input.split()
+
+# print(sentence)
+
+# result={}
+
+# for i in sentence:
+
+#     if i in result:
+#         result[i]+=1
+#     else:
+#         result[i] = 1
+        
+        
+# print(result)
+
+# 3.
+# sentence = input("Enter Sentence : ")
+# words = sentence.split()
+# words.sort()
+# print(words)
+
+# sentence = "this is a test this is simple this"
+
+# word = ""
+# freq = {}
+
+# for ch in sentence:
+#     if ch != " ":
+#         word += ch
+#     else:
+#         if word in freq:
+#             freq[word] += 1
+#         else:
+#             freq[word] = 1
+#         word = ""
+
+# # last word
+# if word:
+#     if word in freq:
+#         freq[word] += 1
+#     else:
+#         freq[word] = 1
+
+# for key in freq:
+#     print(key + ":" + str(freq[key]))
+
+# Split strings into list without any using built in function
+# sentence = input("Enter a sentence:")
+
+# final = []
+# res = ""
+
+# for ch in sentence:
+#     # print(f"ch :{ch}")
+#     if ch != " ":
+#         res = res + ch
+#         # print(f"res: {res}")
+#     else:
+#         final.append(res)
+#         res = ""
+        
+
+# final.append(res)
+
+# print(final)
+
+
+# sentence = "this is a test this is simple this"
+
+# word = ""
+# freq = {}
+
+# for ch in sentence:
+#     if ch != " ":
+#         word += ch
+#     else:
+#         if word in freq:
+#             freq[word] += 1
+#         else:
+#             freq[word] = 1
+#         word = ""
+
+# # last word
+# if word:
+#     if word in freq:
+#         freq[word] += 1
+#     else:
+#         freq[word] = 1
+
+# for key in freq:
+#     print(key + ":" + str(freq[key]))
+
+
+# words = input("Enter a word : ")
+# L = 0
+# R = len(words) - 1
+# while L<R:
+#     if words[L] != words[R]:
+#         break
+#     L = L + 1
+#     R = R - 1
+
+# # if words[L] != words[R]:
+# #     print("Not a pallindrome")
+# # else:
+# #     print("Pal")
+
+# if words[L] == words[R]:
+#     print("pallindrome")
+# else:
+#     print("Not a Pal")
+
+# Remove duplicates characters keeping first occurrence
+
+# I/p : programming
+# o/p : progamin
+
+# user_input = "programming is a program"
+
+# res = ""
+# rpt = ""
+
+# for i in user_input:
+#     if i not in rpt:
+#         rpt = rpt + i
+#         res = res + i
+
+# print(res)
+
+# sentence = input("Enter a sentence:")
+
+
+# final = []
+# res = ""
+
+# for ch in sentence:
+#     #print(f"ch :{ch}")
+#     if ch != " ":
+#         res = res + ch
+#         #print(f"res: {res}")
+#     else:
+#         final.append(res)
+#         res = ""
+        
+
+# final.append(res)
+
+        
+# print(final)
+        
+# L = 0
+# R = len(final)-1
+# #print(L,R)
+# while L<R:
+#     temp = final[L]
+#     #print(f"temp is {temp}")
+#     final[L]= final[R]
+#     final[R]=temp
+#     L+=1
+#     R-=1
+    
+# print(final)
+
+# final2=""
+
+# for i in range (len(final)):
+#     if i == 0:
+#         final2 = final[i]
+#     else:
+#         final2 += " "+ final[i]
+    
+# print(final2)
