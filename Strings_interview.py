@@ -428,3 +428,16 @@
 #         final2 += " "+ final[i]
     
 # print(final2)
+
+user = "abc"
+out = ""
+
+for i in user:
+    out = i + out
+
+print(out)
+
+if user == out:
+    print("palindrome")
+else:
+    print("not pal")
