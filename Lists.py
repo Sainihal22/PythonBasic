@@ -87,4 +87,83 @@
 # print(result) # desc
 # print(numbers)
 
-# 7. Reverse
+# 7. reverse() : Reverse in place
+# fruits = ["Apple", "Mango", "Banana", "Grapes"]
+# fruits.reverse()
+# print(fruits)
+
+# 8. index() : Finds the Position
+# fruits = ["Apple", "Mango", "Banana", "Grapes"]
+# print(fruits.index("Litchi"))
+
+# 9. count() : Counts the occurrences
+# numbers = [5, 2, 8, 1, 9, 3, 5, 2, 10, 3]
+# print(numbers.count(5))
+
+# 10. extend() : Adds multiple items
+# fruits = ['apple', "mango"]
+# veggies = ["carrot", "potato"]
+
+# # fruits.extend(veggies)
+# veggies.extend(fruits)
+# print(fruits)
+# print(veggies)
+
+# Difference : 
+
+# append(x) : it add x as a single item
+# extend([x]) : it adds each items of list seperately
+
+# a = [1,2,3]
+# b = [1,2,3]
+
+# a.append([4,5])
+# print(a)
+# print(a[3])
+
+# b.extend([4,5])
+# print(b)
+
+# 11. copy() : Copy a list
+# original = [1, 2, 3]
+# original_copy = original.copy()
+
+# original_copy.append(4)
+# print(original)
+# print(original_copy)
+
+# original_copy = original
+# original_copy.append(4)
+# print(original)
+# print(original_copy)
+
+# 12. clear() : Empty the list
+# fruits = ["apple", "mango", "banana"]
+# fruits.clear()
+# print(fruits)
+
+# 13. len() : returns the length of list
+# fruits = ["apple", "mango", "banana"]
+
+# print(len(fruits))
+
+# Method           What it does                Time
+# ───────────────────────────────────────────────────
+# append(x)        Add x to end               O(1)
+# insert(i, x)     Add x at index i           O(n)
+# remove(x)        Remove first x             O(n)
+# pop()            Remove and return last      O(1)
+# pop(i)           Remove at index i          O(n)
+# sort()           Sort in place              O(n log n)
+# sorted()         Return new sorted list     O(n log n)
+# reverse()        Reverse in place           O(n)
+# index(x)         Find index of x            O(n)
+# count(x)         Count x occurrences        O(n)
+# extend(list)     Add all items of list      O(n)
+# copy()           Shallow copy               O(n)
+# clear()          Remove all items           O(n)
+# len()            Total items                O(1)
+
+# O(1) : Fastest
+# O(n) : Medium
+# O(n log n) : Slowest
