@@ -167,3 +167,260 @@
 # O(1) : Fastest
 # O(n) : Medium
 # O(n log n) : Slowest
+
+# List Comprehension 
+
+# normal way
+
+# numbers = []
+# for i in range(1,6):
+#     numbers.append(i)
+# print(numbers)
+
+# comprehension way
+
+# numbers = [i for i in range(1,6)]
+# print(numbers)
+
+# Squares of a number
+
+# squares = [i*i for i in range(1,6)]
+# print(squares)
+
+# only even numbers
+# even = []
+# for i in range(1,10):
+#     if i%2==0:
+#         even.append(i)
+# print(even)
+
+# even = [i for i in range(1,10) if i%2==0]
+
+# names = ["alice", "bob", "charlie"]
+# upper = [i.upper() for i in names]
+# print(upper)
+
+# Filter long names whose length is greater than 3
+# names = ["alice", "bob", "charlie", "eve", "david"]
+# long_names = [i for i in names if len(i)>3]
+# print(long_names)
+
+# Nested Lists
+# A list inside a list
+
+# matrix = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+# # print(matrix)
+# print(matrix[0][0])
+
+# Looping
+
+# for row in matrix:
+#     for item in row:
+#         print(item, end= " ")
+#     print()
+
+## 11. List vs Other Data Structures
+'''
+Structure    Ordered    Mutable    Duplicates    Use When
+──────────────────────────────────────────────────────────────
+List         Yes        Yes        Yes           General collection
+Tuple        Yes        No         Yes           Fixed data
+Set          No         Yes        No            Unique items
+Dictionary   Yes*       Yes        No keys       Key-value pairs
+String       Yes        No         Yes           Text only
+
+
+Choose list when:
+
+Need to add or remove items
+Order matters
+Duplicates are allowed
+Need index based access
+
+'''
+
+# Q1. 
+
+# fruits = ["apple", "mango", "banana", "grapes"]
+# print(fruits[-2])
+# print(fruits[1:3])
+# print(len(fruits))
+
+# Q2. 
+
+# numbers = [5,2,8,1,9,3]
+# numbers.sort()
+# print(numbers)
+# numbers.sort(reverse=True)
+# print(numbers)
+
+# Q3.
+
+# fruits = ["apple", "mango", "banana"]
+
+# fruits.append("grapes")
+# fruits.insert(1, "pineapple")
+# fruits.remove("mango")
+
+# Q4.
+
+# a = [1,2,3]
+# b = a
+
+# a.append(4)
+# print(a)
+# print(b)
+
+# Q5.
+
+# numbers = [1, 2, 2, 3, 3, 3, 4]
+
+# print(numbers.count(7))
+# print(numbers.index(3))
+
+# Q6.
+
+# numbers = [i*2 for i in range(1,6)]
+# print(numbers)
+# [2, 4, 6, 8, 10]
+
+# numbers = [i for i in range(1,11) if i%2 == 0]
+# print(numbers)
+
+# Q7.
+
+# a = [1, 2, 3]
+# a.append([4,5])
+# print(a)
+# print(len(a))
+
+# b = [1, 2, 3]
+# b.extend([4,5])
+# print(b)
+# print(len(b))
+
+# Q8 Write the code : 
+# 1. Take 5 numbers from user one by one
+# 2. Store those 5 numbers in a list
+# 3. Print the list, sum and largest number
+
+# brute-force approach 
+
+# numbers = []
+# for i in range(1,6):
+#     n = int(input(f"Enter the number {i} : "))
+#     numbers.append(n)
+
+# print(numbers)
+# total = 0
+
+# for i in numbers:
+#     total = total + i
+
+# print(total)
+
+# largest = numbers[0]
+
+# for num in numbers:
+#     if num > largest:
+#         largest = num
+
+# print(largest)
+
+# a = [1,2,3]
+# b = [4,5,6]
+
+# print(a + b)
+# print(a * 3)
+
+# numbers = [1,2,3,4,5]
+
+# for i in range(len(numbers) + 1):
+#     print(numbers[i])
+
+# a = [1,2,3]
+# b = a
+# b.append(4)
+# print(a)
+
+# numbers = [3,1,4,1,5]
+# result = sorted(numbers)
+# print(result)
+# numbers.sort()
+# print(numbers == result)
+
+# fruits = ["apple", "mango", "banana"]
+# fruits.remove("grapes")
+# print(fruits)
+
+# numbers = [1,2,3,4,5]
+# for n in numbers:
+#     if n%2 == 0:
+#         numbers.remove(n)
+# print(numbers)
+
+# Reverse a list taking values from user, without using reverse() and [::-1]
+
+# x = int(input("enter the length of list:"))
+# numbers = []
+
+
+# for i in range(1, x+1):
+#     n = int(input(f"Enter the number {i}: "))
+#     numbers.append(n)
+# print(numbers)
+
+# L = 0
+# R = len(numbers) - 1 
+
+# while L < R:
+#     temp = numbers[L]
+#     numbers[L] = numbers[R]
+#     numbers[R] = temp
+#     L = L + 1
+#     R = R - 1
+
+# print(numbers)
+
+# Second Largest
+
+# numbers = [3,1,4,1,5]
+
+# largest = numbers[0]
+# second_largest = None
+
+# for i in numbers:
+#     if i > largest:
+#         second_largest = largest
+#         largest = i
+#     elif second_largest is None or i > second_largest:
+#         if i != largest:
+#             second_largest = i
+
+# print(largest)
+# print(second_largest)
+
+user_input = [1,2,2,3,4,3,3,4]
+empty={}
+
+for i in user_input:
+    if i in empty:
+        empty[i]+=1
+    else:
+        empty[i]=1
+        
+        
+# print(empty)
+
+duplicates = []
+
+for i in empty:
+    # print(i, empty[i])
+    if empty[i] > 1:
+        duplicates.append(i)
+
+print(duplicates)
