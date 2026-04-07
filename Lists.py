@@ -225,6 +225,7 @@
 
 ## 11. List vs Other Data Structures
 '''
+
 Structure    Ordered    Mutable    Duplicates    Use When
 ──────────────────────────────────────────────────────────────
 List         Yes        Yes        Yes           General collection
@@ -412,15 +413,94 @@ for i in user_input:
         empty[i]+=1
     else:
         empty[i]=1
-        
-        
+       
 # print(empty)
 
-duplicates = []
+# duplicates = []
 
-for i in empty:
-    # print(i, empty[i])
-    if empty[i] > 1:
-        duplicates.append(i)
+# for i in empty:
+#     # print(i, empty[i])
+#     if empty[i] > 1:
+#         duplicates.append(i)
 
-print(duplicates)
+# print(duplicates)
+
+# Move All Zeros to End
+# numbers = [0, 1, 0, 3, 0, 5]
+# [1, 3, 5, 0, 0, 0]
+
+# result = []
+
+# for i in numbers:
+#     if i != 0:
+#         result.append(i)
+
+
+# for i in numbers:
+#     if i == 0:
+#         result.append(i)
+
+# print(result)
+
+# non_zeros = []
+# zero_count = 0
+
+# for i in numbers:
+#     if i != 0:
+#         non_zeros.append(i)
+#     else:
+#         zero_count += 1
+
+# for i in range(zero_count):
+#     non_zeros.append(0)
+
+# print(non_zeros)
+
+# j = 0
+
+# for i in range(len(numbers)):
+#     if numbers[i] != 0:
+#         temp = numbers[i]
+#         numbers[i] = numbers[j]
+#         numbers[j] = temp
+#         j += 1
+
+# print(numbers)
+
+# list3=[]
+# for i in list1:
+#     if i in list2:
+#         list3.append(i)
+        
+# print(list3)
+
+# Merge Two Lists and Remove Duplicates
+
+# list1 = [1, 2, 3, 4]
+# list2 = [3, 4, 5, 6]
+
+# #  [1, 2, 3, 4, 5, 6]
+
+# list1.extend(list2)
+# print(list1)
+
+# backup=[]
+# output=[]
+
+# for i in list1:
+#     if i not in backup:
+#         backup.append(i)
+#         output.append(i)
+        
+# print(output)
+
+# Move All Zeros to End
+# numbers = [0, 1, 0, 3, 0, 5]
+# # [1, 3, 5, 0, 0, 0]
+
+# for i in numbers:
+#     if i == 0:
+#         numbers.append(i)
+#         numbers.remove(i)
+        
+# print(numbers)
