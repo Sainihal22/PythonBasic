@@ -95,7 +95,68 @@
 # print(keys)
 
 # update() : Merge or update
+# student = {"name" : "Soundarya", "age" : 22}
+# place = {"city" : "Bengaluru", "branch": "ECE"}
+# student.update(place)
+# print(student)
+
+# pop() : Removes and returns the value
+# result = student.pop("gender", "Not Found")
+# print(student)
+# print(result)
+
+# del : inplace
+# del student["city"]
+# print(student)
+
+# popitem() : Removes last item
+# popped_item = student.popitem()
+# print(student)
+# print(popped_item)
+
+# setdefault () : Get or Set Default
+
+# student = {"name" : "Soundarya", "age" : 22}
+# result = student.setdefault("name", "Theja")
+# print(result)
+# print(student)
+
+# student = {"name" : "Soundarya", "age" : 22}
+# result = student.setdefault("city", "blr")
+# print(result)
+# print(student)
+
+# clear() : Remove all items
+# student = {"name" : "Soundarya", "age" : 22}
+# student.clear()
+# print(student)
+
+# copy() : Shallow Copy
+# student = {"name" : "Soundarya", "age" : 22}
+# student_copy = student.copy()
+# student_copy["city"] = "Blr"
+# print(student)
+# print(student_copy)
+# print()
+
+# student_deepcopy = student
+# student_deepcopy["City"] = "Blr"
+# print(student)
+# print(student_deepcopy)
+
+# length() : len() --> count keys
+# student = {"name" : ["Soundarya", "Julie"], "NA" : "Not Found"}
+# print(student)
+# print(len(student))
+
+# in : Checks if keys exists
 student = {"name" : "Soundarya", "age" : 22}
-place = {"city" : "Bengaluru", "branch": "ECE"}
-student.update(place)
-print(student)
+
+print("name" in student)
+print("city" in student)
+print("Soundarya" in student)
+
+# Check for Value existance
+for key, value in student.items():
+    if "Soundarya" == value:
+        print("True")
