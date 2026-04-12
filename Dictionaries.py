@@ -150,13 +150,75 @@
 # print(len(student))
 
 # in : Checks if keys exists
-student = {"name" : "Soundarya", "age" : 22}
+# student = {"name" : "Soundarya", "age" : 22}
 
-print("name" in student)
-print("city" in student)
-print("Soundarya" in student)
+# print("name" in student)
+# print("city" in student)
+# print("Soundarya" in student)
 
-# Check for Value existance
-for key, value in student.items():
-    if "Soundarya" == value:
-        print("True")
+# # Check for Value existance
+# for key, value in student.items():
+#     if "Soundarya" == value:
+#         print("True")
+
+# Loop with condition
+
+# prices = {"apple" : 40, "mango" : 90, "banana" : 30, "grapes" : 100}
+# prices["apple"] = 60
+# print(prices)
+
+# prices["kiwi"] = prices.pop("apple")
+# print(prices)
+
+# # Display those fruits whose prices are greater than 60
+
+# for key, value in prices.items():
+#     if value > 60:
+#         print(key)
+
+# students = {
+#     "Alice" : {"age" : 22, "branch" : "CSE", "phno" : 12345678},
+#     "Bob" :  {"age" : 23, "branch" : "ECE", "phno" : 456978213}
+# }
+# print(students)
+
+# print(students["Alice"]["phno"])
+
+# for key, value in students.items():
+#     print(f"Key : {key} and its Value is : {value}")
+#     for key1, value1 in value.items():
+#         print(f"   Key : {key1} and its value is : {value1}")
+#     print()
+
+# Feature          List      Tuple     Set       Dictionary
+# ──────────────────────────────────────────────────────────
+# Created with     []        ()        {}        {k:v}
+# Ordered          Yes       Yes       No        Yes (3.7+)
+# Mutable          Yes       No        Yes       Yes
+# Duplicates       Yes       Yes       No        No keys
+# Indexed by       number    number    No        key
+# Lookup           O(n)      O(n)      O(1)      O(1)
+# Use when         sequence  fixed     unique    key-value
+#                  of items  data      items     mapping
+
+# CRUD Operations
+# C : Create
+# R : Read
+# U : Update
+# D : Delete
+
+# Choose Dictionary When
+# Need to look up by name not number
+# →  student["name"] not student[0]
+
+# Need to label your data
+# →  {"name": "Alice", "age": 22}
+
+# Need fast lookup by key
+# →  O(1) just like set
+
+# Counting frequency
+# →  {"apple": 3, "mango": 2}
+
+# Grouping data
+# →  {"CSE": [...], "ECE": [...]}
