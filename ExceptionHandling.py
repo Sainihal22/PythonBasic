@@ -37,8 +37,92 @@
 # except:
 #     # runs if error occurs
 
+# logs : Loggings / logging : it is a way of displaying errors, warnings, output in production/deployment based env.
+
+# import logging
+# logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.WARNING)
+# logging.basicConfig(level=logging.ERROR)
 # try:
 #     result = 10/0
-#     print(result)
+#     logging.info(result)
+#     # print(result)
 # except:
-#     print("Something went wrong")
+#     logging.info(" Something went wrong")
+
+# logging.debug(" Debug Checkpoint")
+# logging.info(" App is still running")
+# logging.warning(" App is giving warning")
+# logging.error(" There is an error in the APP")
+
+# ERROR
+# WARNING
+# INFO
+# DEBUG
+
+# try:
+#     result = 10/0
+#     logging.info(result)
+# # except ZeroDivisionError:
+# #     logging.info("Cannot divide by zero")
+# # except Exception as e:
+# #     logging.info("Something went wrong : ", e)
+# except ZeroDivisionError:
+#     logging.info("Cannot divide by zero")
+
+# logging.info("App is running")
+
+# try:
+#     n = int("ABC")
+# # except Exception as e:
+# #     logging.info("Something went wrong : ", e)
+# except ValueError:
+#     logging.info("Invalid Literal")
+
+# def divide(a,b):
+#     result = a / b
+#     print(result)
+
+# try:
+#     divide(5, 10) # Happy Path
+#     divide(4, 0)
+#     divide("a", 10)   
+# except TypeError:
+#     print("Enter only numbers")
+# except ZeroDivisionError:
+#     print("Cannnot divide by zero")
+
+# else : Runs when no Error
+
+# try:
+#     result = 10/5
+# except ZeroDivisionError:
+#     print("Not divided by zero")
+# else:
+#     print(f"Success : {result}")
+
+# finally : Always Runs
+# Its useful for cleanup like : closing files, closing connections(db, aws, s3, etc)
+
+# try:
+#     result = 10/5
+# except ZeroDivisionError:
+#     print("Not divided by zero")
+# else:
+#     print(f"Success : {result}")
+# finally:
+#     print("This always runs")
+
+# Full structure
+
+# try:
+#     # risky code
+# except SpecificError as e:
+#     # Handle it
+# except Exception as e:
+#     # handle it
+# else:
+#     # runs only if there is no error
+# finally:
+#     # always runs
