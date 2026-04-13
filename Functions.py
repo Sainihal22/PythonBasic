@@ -178,4 +178,49 @@
 # evens = list(filter(lambda n : n%2 == 0, numbers))
 # print(evens)
 
+# Functions : paramters, non parameters, return, non return
 # SCOPE : LEGB Rule
+# *args, **kwargs, lambda, map, filter : Advanced methods in python
+
+# SCOPE : LEGB Rule
+# L : Local --> Inside current function
+# E : Enclosing --> Inside outer function
+# G : Global --> outside all functions
+# B : Built-in --> Python built-ins like print, len, min, etc
+
+# Python Searches in this order : 
+# Local First --> Enclosing --> Global --> Built-in
+
+# x = "global"
+
+# def outer():
+#     x = "enclosing"
+
+#     def inner():
+#         x = "local"
+#         print(x)
+    
+#     inner()
+#     print(x)
+
+# outer()
+# print(x)
+
+# global keyword
+
+# count = 0
+
+# def increment():
+#     global count
+#     count = count + 1
+
+# increment()
+# print(count)
+
+# count = 0
+
+# def increment():
+#     count = count + 1
+
+# increment()
+# print("Very Important")
