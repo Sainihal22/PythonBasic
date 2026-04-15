@@ -126,3 +126,19 @@
 #     # runs only if there is no error
 # finally:
 #     # always runs
+
+# Custom Exceptions
+
+# def check_age(age):
+#     if age < 0:
+#         raise Exception("Age cannot be negative")
+#     if age > 100:
+#         raise Exception("Age is too large")
+#     print(f"Age : {age}")
+
+# try:
+#     check_age(-25)
+# except Exception as e:
+#     print("Invalid Age Error : ", e)
+
+# Exception Handling, try catch block, try except block
