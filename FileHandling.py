@@ -125,7 +125,7 @@
 # import os
 
 # check if file exists or not
-import os
+# import os
 
 # if os.path.exists(r"C:\Users\Sai_nihal_Kothi\Downloads\Sample\downloads_1.txt"):
 #     print("File exists")
@@ -168,15 +168,29 @@ import os
 
 # Joining a folder and a file
 
-folder = "features"
-filename = "feature.txt"
+# folder = "features"
+# filename = "feature.txt"
 
-path = os.path.join(folder, filename) # / : linux / mac, \ : windows
+# path = os.path.join(folder, filename) # / : linux / mac, \ : windows
 
-with open(path, "w") as file:
-    file.write("David\n")
-    file.write("Eve\n")
+# with open(path, "w") as file:
+#     file.write("David\n")
+#     file.write("Eve\n")
 
+# .xlsx : Excel File
+import csv
+
+# with open("sample.csv","r") as file:
+#     reader = csv.reader(file)
+#     for row in reader:
+#         print(row)
+
+# Read CSV as Dictionary
+
+# with open("sample.csv","r") as file:
+#     reader = csv.DictReader(file)
+#     for row in reader:
+#         print(row)
 
 
 
